@@ -1,0 +1,591 @@
+/*   ======================================================================   */
+/*   |                                                                    |   */
+/*   |                                                                    |   */
+/*   |                              DEVELOPER                             |   */
+/*   |                            AYESHA ASHFAQ                           |   */
+/*   |                                                                    |   */
+/*   |                                                                    |   */
+/*   ======================================================================   */
+
+
+
+/* ===================== Responsiveness ====================== */
+
+
+/* ================= (Max-width: 1230px) =================== */
+
+@media screen and (max-width: 1300px) {
+
+    /* ================= SIGNUP PAGE ======================= */
+
+    /*#region */
+
+    .sign .signup {
+        width: 65%;
+    }
+
+    /* ==================================================== */
+
+    /*#endregion */
+
+}
+
+
+/* ================= (Max-width: 1180px) =================== */
+
+@media screen and (max-width: 1180px) {
+
+    /* ================= PROFILE PAGE ======================= */
+
+    /*#region */
+
+
+    .player-profile .player {
+        width: 90%;
+    }
+
+    .player-profile .stats {
+        width: 90%;
+    }
+
+    /* ==================================================== */
+
+
+    .fixture-history .heading {
+        width: 90%;
+    }
+
+    .fixture-history .fixture-grid {
+        width: 90%;
+    }
+
+    /*#endregion */
+
+
+    /* ================= GALLERY PAGE ======================= */
+
+    /*#region */
+
+    .players-gallery .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* ==================================================== */
+
+    /*#endregion */
+
+}
+
+/* ================= (Max-width: 1100px) =================== */
+
+@media screen and (max-width: 1100px) {
+
+
+    /* ================= HOME PAGE ======================== */
+
+    /*#region */
+
+    header .logo a {
+        position: relative;
+        left: 2rem;
+        justify-content: flex-start;
+    }
+
+    header .menu {
+        width: 60% !important;
+        flex-flow: column;
+        align-items: flex-start;
+        position: absolute;
+        background: #fff;
+        background-color: var(--primary-color);
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 7rem;
+        height: 100vh;
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: top center;
+        transition: 200ms transform cubic-bezier(0.36, 0.4, 0.42, 1.48) 100ms, 100ms opacity ease-in-out;
+    }
+
+    header .menu li {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    header .menu>li>a {
+        font-weight: 500;
+        color: #fff;
+
+    }
+
+    header .hamburger {
+        right: 2rem;
+        width: 2em;
+        height: 0.25em;
+        display: block;
+        background: #000;
+        background: var(--tertiary-color);
+        position: absolute;
+        cursor: pointer;
+        transition: 0.2s transform ease-in-out;
+    }
+
+    header .hamburger::after,
+    header .hamburger::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        background: inherit;
+        width: inherit;
+        height: inherit;
+
+        transition: 0.2s transform ease-in-out;
+    }
+
+    header .hamburger::after {
+        top: 0.65em;
+    }
+
+    header .hamburger::before {
+        bottom: 0.65em;
+    }
+
+    header .close::after,
+    header .close::before {
+        top: 0;
+        transition: 0.2s transform ease-in-out;
+    }
+
+    header .close {
+        transform: rotate(45deg);
+        transition: 0.2s transform ease-in-out;
+    }
+
+    header .close::after {
+        transform: rotate(-90deg);
+    }
+
+    header input[type="checkbox"]:checked+.menu {
+        position: absolute;
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    header .link-btn {
+        width: 100%;
+        margin: 1rem 0;
+        justify-content: flex-start;
+    }
+
+    /* ====================================================== */
+
+    /*#endregion */
+
+
+    /* ================= GALLERY PAGE ======================= */
+
+    /*#region */
+
+    .text-filter .text {
+        width: 40%;
+        padding-left: 3rem;
+    }
+
+    .text-filter .filter {
+        width: 60%;
+        padding-right: 1rem;
+    }
+
+    /*#endregion */
+}
+
+/* ================= (Max-width: 1150px) =================== */
+
+@media screen and (max-width: 1150px) {
+
+
+    /* ================= HOME PAGE ======================== */
+
+    /*#region */
+
+    .standout .vote-card {
+        width: 92%;
+        padding: 1rem 3rem;
+    }
+
+    .standout .vote-card .card-info .tag {
+        justify-content: center;
+    }
+
+    /* ====================================================== */
+
+    /*#endregion */
+}
+
+/* ================= (Max-width: 985px) =================== */
+
+@media screen and (max-width: 985px) {
+
+
+    /* ================= HOME PAGE ======================== */
+
+    /*#region */
+
+    .standout .vote-card {
+        padding: 1rem 2rem;
+    }
+
+
+    .standout .vote-card .player-info .player #myProgress {
+        width: 75%;
+    }
+
+    .standout .vote-card .player-info .player .detail {
+        width: 24%;
+    }
+
+    /* ====================================================== */
+
+    /*#endregion */
+
+    /* ================= PROFILE PAGE ======================== */
+
+    /*#region */
+
+    .player-profile .player .img .p-name {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    /* ====================================================== */
+
+    /*#endregion */
+
+
+    /* ================= GALLERY PAGE ======================= */
+
+    /*#region */
+
+    .text-filter {
+        flex-direction: column;
+    }
+
+    .text-filter .text {
+        width: 100%;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .text-filter .filter {
+        width: 100%;
+        justify-content: space-evenly;
+        padding-right: 0;
+    }
+
+    .text-filter .filter .field {
+        width: 25%;
+        margin-right: 0;
+    }
+
+    .players-gallery .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /*#endregion */
+    /* ================= SIGNUP PAGE ======================= */
+
+    /*#region */
+
+    .sign .signup {
+        width: 80%;
+    }
+
+    /* ==================================================== */
+
+    /*#endregion */
+}
+
+/* ================= (Max-width: 820px) =================== */
+
+@media screen and (max-width: 820px) {
+
+    /* ================= HOME PAGE ======================== */
+
+    /*#region */
+
+    .standout .heading {
+        text-align: center;
+    }
+
+    .standout .vote-card .card-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .standout .vote-card .card-info .text {
+        width: 95%;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .standout .vote-card .card-info .img {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .standout .vote-card .card-info .tag {
+        width: 80%;
+        margin-bottom: 1.5rem;
+    }
+
+    .standout .vote-card .player-info .player {
+        margin: 0.4rem 0;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .standout .vote-card .player-info .player #myProgress {
+        width: 100%;
+    }
+
+    .standout .vote-card .player-info .player .detail {
+        width: 50%;
+        align-items: end;
+    }
+
+    .standout .vote-card .player-info .player .detail .rank-detail {
+        text-align: left;
+        padding-bottom: 1rem;
+    }
+
+    /* ====================================================== */
+
+    /*#endregion */
+
+    /* ================= PROFILE PAGE ======================== */
+
+    /*#region */
+
+    .fixture-history .fixture-grid .row {
+        grid-template-columns: 1fr 1fr;
+        border-top: 1px solid var(--primary-color);
+        padding: 1rem 0;
+        row-gap: 1rem;
+        align-items: center;
+    }
+
+    .fixture-history .fixture-grid .row .school {
+        text-align: right;
+        width: 100%;
+    }
+
+    .fixture-history .fixture-grid .row .school:last-child {
+        text-align: left;
+    }
+
+    .fixture-history .fixture-grid .row .img {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .fixture-history .fixture-grid .row .img:nth-child(4) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .fixture-history .fixture-grid .row img {
+        width: 30%;
+    }
+
+    .fixture-history .fixture-grid .row .detail {
+        grid-column: span 2;
+    }
+
+
+    /* ====================================================== */
+
+    /*#endregion */
+}
+
+/* ================= (Max-width: 760px) =================== */
+
+@media screen and (max-width: 760px) {
+
+    /* ================= HOME PAGE ======================= */
+
+    /*#region */
+
+    .fixtures .college-cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* ==================================================== */
+    .standout .news-card {
+        padding: 1rem 2rem !important;
+    }
+
+    /*#endregion */
+
+    /* ================= PROFILE PAGE ======================= */
+
+    /*#region */
+
+    .player-profile .player {
+        flex-direction: column;
+    }
+
+    .player-profile .player .img {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .player-profile .player .img .p-name {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .player-profile .athlete-info {
+        width: 100%;
+        padding-left: 0.3rem;
+    }
+
+    /* ==================================================== */
+    .standout .news-card {
+        padding: 1rem 2rem !important;
+    }
+
+    /*#endregion */
+
+    /* ================= GALLERY PAGE ======================= */
+
+    /*#region */
+
+    .players-gallery .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ==================================================== */
+
+    /*#endregion */
+
+    /* ================= SIGNUP PAGE ======================= */
+
+    /*#region */
+
+    .sign .signup form .field-group {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* ==================================================== */
+
+    /*#endregion */
+
+}
+
+/* ================= (Max-width: 600px) =================== */
+
+@media screen and (max-width: 600px) {
+
+    /* ================= HOME PAGE ======================= */
+
+    /*#region */
+
+    .fixtures .college-cards {
+        margin: 1.5rem 3rem;
+    }
+
+    /* ==================================================== */
+    .standout .news-card {
+        padding: 1rem 2rem !important;
+    }
+
+    /* ==================================================== */
+
+    /*#endregion */
+
+    /* ================= GALLERY PAGE ======================= */
+
+    /*#region */
+
+    .text-filter .filter .field {
+        width: 30%;
+    }
+
+    /* ==================================================== */
+
+    /*#endregion */
+
+
+}
+
+/* ================= (Max-width: 500px) =================== */
+
+@media screen and (max-width: 500px) {
+
+    /* ================= PROFILE PAGE ======================= */
+
+    /*#region */
+
+    .player-profile .player .img .p-name {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .player-profile .stats {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .player-profile .stats .athletic,
+    .player-profile .stats .weight {
+        width: 95%;
+    }
+
+    .player-profile .stats .weight {
+        margin-top: 2rem;
+    }
+
+    /* ==================================================== */
+
+    /*#endregion */
+
+    /* ================= GALLERY PAGE ======================= */
+
+    /*#region */
+
+    .players-gallery .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .text-filter .filter .field {
+        width: 38%;
+    }
+
+    /* ==================================================== */
+
+    /*#endregion */
+    /* ================= SIGNUP PAGE ======================= */
+
+    /*#region */
+
+    .sign .signup {
+        width: 85%;
+        margin: 5rem 0;
+        padding: 2rem 2rem;
+    }
+    /* ==================================================== */
+
+    /*#endregion */
+
+
+}
